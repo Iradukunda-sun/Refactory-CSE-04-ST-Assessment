@@ -1,0 +1,56 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Flight Booking Form
+  link(rel='stylesheet' href='/css/styles.css')
+.container
+  img(src='/img/Header.PNG' alt='head')
+  form(action='/flight'  method = 'POST')
+    .section
+      h3 PASSENGER INFORMATION
+      label Full Name *
+      input(type='text' name='fullName') 
+      span.error-message
+      label Gender *
+      select()
+        option(value='') -- Select --
+        option(value='male' name='gender') Male
+        option(value='female'  name='gender') Female
+        option(value='other'  name='gender') Other
+        span.error-message
+      label Date of Birth *
+      input(type='date'  name='dateOfBirth' )
+      span.error-message
+      label Nationality *
+      input(type='text' name='nationality')
+    .section
+      h3 CONTACT INFORMATION
+      label Phone Number *
+      input(type='tel' name='phoneNumber')
+      span.error-message
+      label Email Address *
+      input(type='email' name='emali')
+      span.error-message
+      label P.O. BOX Number
+      input(type='text' name= 'poBox')
+      span.error-message
+      label Emergency Phone Number *
+      input(type='tel' name= 'emergencyPhone')
+      span.error-message
+    .section
+      h3 FLIGHT INFORMATION
+      label Passport Number *
+      input(type='text' name= 'passportNumber')
+      span.error-message
+      label Visa Document *
+      input(type='file' name= 'visaDocument')
+      span.error-message
+      label Departure City *
+      input(type='text' name= ' departureCity')
+      span.error-message
+      label Destination City *
+      input(type='text'  name='destinationCity')
+      span.error-message
+    button(type='submit') SUBMIT
+script(src = '/js/formValidation.js')

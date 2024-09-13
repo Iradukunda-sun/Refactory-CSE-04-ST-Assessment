@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Agency FB;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    background-color: #d71d1d;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: right;
+    font-style: italic;
+    color: #d71d1d;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    width: 30%;
+    padding: 10px;
+    border: 1px dashed red;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #d71d1d;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+input[type="file"] {
+    padding: 3px;
+}
+
+button {
+    
+    background-color: #d71d1d;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+ margin-left: 800px;
+}
+
+button:hover {
+    background-color: #1bb823;
+}
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    display: block;
+}
+.error-message {
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: red;
+    display: block;
+    font-family: Agency FB;
+}
+
+
